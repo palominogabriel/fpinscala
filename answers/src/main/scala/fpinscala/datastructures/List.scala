@@ -118,6 +118,7 @@ object List { // `List` companion object. Contains functions for creating and wo
       case Cons(_,Nil) => Nil
       case Cons(h,t) => Cons(h,init(t))
     }
+
   def init2[A](l: List[A]): List[A] = {
     import collection.mutable.ListBuffer
     val buf = new ListBuffer[A]
